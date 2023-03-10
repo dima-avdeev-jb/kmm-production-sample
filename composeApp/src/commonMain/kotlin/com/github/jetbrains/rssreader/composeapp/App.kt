@@ -8,7 +8,7 @@ import com.github.jetbrains.rssreader.app.FeedStore
 expect val AppStore: FeedStore
 
 @Composable
-fun App() = AppTheme {
+internal fun App() = AppTheme {
     LaunchedEffect(Unit) {
         AppStore.dispatch(FeedAction.Refresh(false))
     }

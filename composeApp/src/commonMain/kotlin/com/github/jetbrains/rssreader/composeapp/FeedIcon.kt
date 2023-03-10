@@ -22,7 +22,7 @@ import androidx.compose.ui.unit.dp
 import com.github.jetbrains.rssreader.core.entity.Feed
 
 @Composable
-fun FeedIcon(
+internal fun FeedIcon(
     feed: Feed?,
     isSelected: Boolean = false,
     onClick: (() -> Unit)? = null
@@ -69,7 +69,7 @@ private fun Feed.shortName(): String =
         .uppercase()
 
 @Composable
-fun EditIcon(
+internal fun EditIcon(
     onClick: () -> Unit
 ) {
     Box(

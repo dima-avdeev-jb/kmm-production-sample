@@ -29,13 +29,18 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
+//                implementation("io.ktor:ktor-client-core:$ktorVersion")
                 implementation(compose.runtime)
                 implementation(compose.foundation)
                 implementation(compose.material)
                 implementation(libs.kotlinx.datetime)
                 implementation(libs.kotlinx.coroutines.core)
+                implementation(libs.compose.image.loader)
+//                implementation("org.jetbrains.compose.components:components-resources:1.4.0-alpha01-dev942")
+//                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1")
+//                @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
+//                implementation(compose.material3)
                 implementation(project(":shared"))
-//                implementation(libs.compose.image.loader)//todo broke compilation
             }
         }
         val androidMain by getting {

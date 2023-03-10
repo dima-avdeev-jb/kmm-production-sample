@@ -23,7 +23,7 @@ import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
 
 @Composable
-fun PostList(
+internal fun PostList(
     modifier: Modifier,
     posts: List<Post>,
     listState: LazyListState,
@@ -42,7 +42,7 @@ fun PostList(
 }
 
 @Composable
-fun PostItem(
+internal fun PostItem(
     item: Post,
     onClick: () -> Unit
 ) {

@@ -17,7 +17,7 @@ import com.github.jetbrains.rssreader.core.entity.Post
 import kotlinx.coroutines.launch
 
 @Composable
-fun MainFeed(
+internal fun MainFeed(
     store: FeedStore,
     onPostClick: (Post) -> Unit,
     onEditClick: () -> Unit,
@@ -54,7 +54,7 @@ private sealed class Icons {
 }
 
 @Composable
-fun MainFeedBottomBar(
+internal fun MainFeedBottomBar(
     feeds: List<Feed>,
     selectedFeed: Feed?,
     onFeedClick: (Feed?) -> Unit,
